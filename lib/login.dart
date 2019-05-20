@@ -61,9 +61,6 @@ class _LoginPageState extends State<LoginPage> {
                 Text('SHRINE'),
               ],
             ),
-            SizedBox(height: 120.0),
-            // TODO: Wrap Username with AccentColorOverride (103)
-            // TODO: Remove filled: true values (103)
 
             AccentColorOverride(
               color: kShrineBrown900,
@@ -76,7 +73,6 @@ class _LoginPageState extends State<LoginPage> {
             ),
 
             SizedBox(height: 12.0),
-            // TODO: Wrap Password with AccentColorOverride (103)
 
             AccentColorOverride(
               color: kShrineBrown900,
@@ -91,7 +87,6 @@ class _LoginPageState extends State<LoginPage> {
 
             ButtonBar(
               children: <Widget>[
-                // TODO: Add a beveled rectangular border to CANCEL (103)
                 FlatButton(
                   child: Text('CANCEL'),
                   shape: BeveledRectangleBorder(
@@ -101,8 +96,6 @@ class _LoginPageState extends State<LoginPage> {
                     _passwordController.clear();
                   },
                 ),
-                // TODO: Add an elevation to NEXT (103)
-                // TODO: Add a beveled rectangular border to NEXT (103)
                 RaisedButton(
                   child: Text('NEXT'),
                   shape: BeveledRectangleBorder(
@@ -121,4 +114,3 @@ class _LoginPageState extends State<LoginPage> {
   }
 }
 
-// TODO: Add AccentColorOverride (103)

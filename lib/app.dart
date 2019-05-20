@@ -63,7 +63,6 @@ import 'supplemental/cut_corners_border.dart';
       fontFamily: "Raleway",
     );
   }
-// TODO: Convert ShrineApp to stateful widget (104)
 class ShrineApp extends StatefulWidget {
 
   @override
@@ -84,13 +83,9 @@ class _ShrineAppState extends State<ShrineApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Shrine',
-      // TODO: Change home: to a Backdrop with a HomePage frontLayer (104)
       home: Backdrop(
-        // TODO: Make currentCategory field take _currentCategory (104)
         currentCategory: _currentCategory,
-        // TODO: Pass _currentCategory for frontLayer (104)
         frontLayer: HomePage(category: _currentCategory),
-        // TODO: Change backLayer field value to CategoryMenuPage (104)
         backLayer: CategoryMenuPage(
           currentCategory: _currentCategory,
           onCategoryTap: _onCategoryTap,
@@ -98,13 +93,9 @@ class _ShrineAppState extends State<ShrineApp> {
         frontTitle: Text('SHRINE'),
         backTitle: Text('MENU'),
       ),
-      // TODO: Make currentCategory field take _currentCategory (104)
-      // TODO: Pass _currentCategory for frontLayer (104)
-      // TODO: Change backLayer field value to CategoryMenuPage (104)
       initialRoute: '/login',
       onGenerateRoute: _getRoute,
       theme: _kShrineTheme,
-      // TODO: Add a theme (103)
     );
   }
 
@@ -121,5 +112,3 @@ class _ShrineAppState extends State<ShrineApp> {
   }
 }
 
-// TODO: Build a Shrine Theme (103)
-// TODO: Build a Shrine Text Theme (103)
